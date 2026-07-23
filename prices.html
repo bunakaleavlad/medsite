@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Цены на услуги | MobiMedx Черноморск</title>
+    <meta name="description" content="Прайс-лист на услуги вызова медсестры и постановки капельниц на дому в Черноморске и Одесской области. Узнать стоимость услуг MobiMedx.">
+    <link rel="canonical" href="https://mobimedx.com/prices.html" />
+    <link rel="alternate" hreflang="ru" href="https://mobimedx.com/prices.html" />
+    <link rel="alternate" hreflang="uk" href="https://mobimedx.com/ua/prices.html" />
+    <link rel="alternate" hreflang="x-default" href="https://mobimedx.com/prices.html" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="styles.css" media="all" />
+    <link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon-16x16.png" />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="logo-wrapper" style="display: flex; flex-direction: column; align-items: center; justify-content: center; line-height: 1;">
+          <a class="logo" href="index.html" aria-label="На главную MobiMedx"><img src="img/mobimedx.png" alt="MobiMedx - логотип" width="200" height="60" loading="lazy" decoding="async" /></a>
+          <a href="tel:+380732810340" class="header-phone">+38 (073) 281 03 40</a>
+        </div>
+        <input type="checkbox" id="check" name="check" />
+        <div class="lang-switch">
+          <a href="prices.html" style="text-decoration: underline" hreflang="ru">RU</a>|<a href="ua/prices.html" hreflang="uk">UA</a>
+        </div>
+        <label for="check" aria-label="Открыть меню" class="mobile-menu-toggle"><span style="font-size: 1.8rem; line-height: 1; user-select: none;">☰</span><span style="display:none;">Меню</span></label>
+        <div class="menu-backdrop" onclick="document.getElementById('check').checked = false"></div>
+        <nav>
+          <ul class="nav">
+            <li><a href="index.html">ГЛАВНАЯ</a></li>
+            <li class="sub-button">
+              <a class="sub-button1" aria-haspopup="true" tabindex="0" role="button">УСЛУГИ</a>
+              <ul class="sub-menu" role="menu">
+                <li><a href="nurse.html">Медсестра на дом</a></li>
+                <li><a href="iv-home.html">Капельница на дому</a></li>
+                <li><a href="alc.html">Капельница от алкоголя</a></li>
+                <li><a href="poisoning.html">Капельница при отравлении</a></li>
+                <li><a href="immunity.html">Капельница для иммунитета</a></li>
+                <li><a href="beauty.html">Капельница Золушка</a></li>
+                <li><a href="detox.html">Капельница Детокс</a></li>
+              </ul>
+            </li>
+            <li><a href="prices.html">ЦЕНЫ</a></li>
+            <li><a href="about.html">О НАС</a></li>
+            <li><a href="#massage">КОНТАКТЫ</a></li>
+            <li class="nav-number"><a href="tel:+380732810340">+38 (073) 281 03 40</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="sector-about" style="padding: 130px 5% 40px; display: block; max-width: 800px; margin: 0 auto; width: 100%; box-sizing: border-box;">
+        <div class="text-about" style="text-align: center; width: 100%;">
+          <h1>Цены на услуги</h1>
+          <p style="margin-bottom: 2rem; color: #475569;">Ознакомьтесь с актуальными ценами на медицинские услуги с выездом на дом.</p>
+          <div style="overflow-x: auto; background: #fff; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); padding: 1rem; margin-bottom: 3rem;">
+            <table style="width: 100%; min-width: 400px; border-collapse: collapse; text-align: left;">
+              <thead>
+                <tr style="border-bottom: 2px solid #e2e8f0;">
+                  <th style="padding: 1rem; font-weight: 600; color: #1e293b;">Услуга</th>
+                  <th style="padding: 1rem; font-weight: 600; color: #1e293b; width: 140px; text-align: right;">Стоимость</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr style="border-bottom: 1px solid #f1f5f9;">
+                  <td style="padding: 1rem; color: #475569;">Выезд медсестры (уколы)</td>
+                  <td style="padding: 1rem; text-align: right; font-weight: 600; color: #5b84d0;">от <span id="price-nurse">600</span> грн</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #f1f5f9;">
+                  <td style="padding: 1rem; color: #475569;">Капельница на дому (базовая)</td>
+                  <td style="padding: 1rem; text-align: right; font-weight: 600; color: #5b84d0;">от <span id="price-iv-home">600</span> грн</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #f1f5f9;">
+                  <td style="padding: 1rem; color: #475569;">Капельница для иммунитета</td>
+                  <td style="padding: 1rem; text-align: right; font-weight: 600; color: #5b84d0;"><span id="price-immunity">1600</span> грн</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #f1f5f9;">
+                  <td style="padding: 1rem; color: #475569;">Капельница Золушка</td>
+                  <td style="padding: 1rem; text-align: right; font-weight: 600; color: #5b84d0;"><span id="price-beauty">1900</span> грн</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #f1f5f9;">
+                  <td style="padding: 1rem; color: #475569;">Капельница Детокс</td>
+                  <td style="padding: 1rem; text-align: right; font-weight: 600; color: #5b84d0;"><span id="price-detox">2900</span> грн</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #f1f5f9;">
+                  <td style="padding: 1rem; color: #475569;">Капельница при отравлении</td>
+                  <td style="padding: 1rem; text-align: right; font-weight: 600; color: #5b84d0;">от <span id="price-poisoning">2900</span> грн</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #f1f5f9;">
+                  <td style="padding: 1rem; color: #475569;">Капельница от алкоголя / вывод из запоя</td>
+                  <td style="padding: 1rem; text-align: right; font-weight: 600; color: #5b84d0;">от <span id="price-alc">3800</span> грн</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+      <section class="sector-massage" id="massage">
+        <h2>Контакты</h2>
+        <div class="massage-container">
+          <div class="contact-us">
+            <p>Часы работы: круглосуточно 24/7</p>
+            <p>Бесплатная консультация</p>
+            <p>
+              Номер телефона: <a href="tel:+380732810340">+38 (073) 281 03 40</a>
+            </p>
+            <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 15px; justify-content: center;">
+              <a href="https://t.me/mobimedx" target="_blank" style="display: inline-flex; align-items: center; justify-content: center; text-decoration: none; padding: 8px 16px; font-size: 0.85rem; font-weight: 500; border-radius: 6px; background: #27A5E7; color: white; box-shadow: 0 2px 8px rgba(39, 165, 231, 0.3); transition: 0.2s;">Telegram</a>
+              <a href="viber://chat?number=%2B380732810340" target="_blank" style="display: inline-flex; align-items: center; justify-content: center; text-decoration: none; padding: 8px 16px; font-size: 0.85rem; font-weight: 500; border-radius: 6px; background: #7360F2; color: white; box-shadow: 0 2px 8px rgba(115, 96, 242, 0.3); transition: 0.2s;">Viber</a>
+              <a href="https://wa.me/380732810340" target="_blank" style="display: inline-flex; align-items: center; justify-content: center; text-decoration: none; padding: 8px 16px; font-size: 0.85rem; font-weight: 500; border-radius: 6px; background: #25D366; color: white; box-shadow: 0 2px 8px rgba(37, 211, 102, 0.3); transition: 0.2s;">WhatsApp</a>
+            </div>
+          </div>
+          <div class="application">
+            <form id="tg" class="tg">
+              <div class="form-control">
+                <input
+                  type="tel"
+                  class="form-control"
+                  name="user_phone"
+                  id="user_phone"
+                  placeholder="+380XXXXXXXXX"
+                  value="+380"
+                  minlength="13"
+                  maxlength="13"
+                  aria-label="Номер телефона"
+                /><button class="contact" type="submit">Бесплатная консультация</button>
+              </div>
+              <div id="success">Сообщение отправлено</div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <p style="margin-bottom: 5px;">📍 Базирование: г. Черноморск, проспект Мира</p>
+      <p>&copy; MobiMedx — Медсестра на дом в Черноморске и Одесской области. 2019-2026</p>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" defer></script>
+    <script type="module" src="./main.js"></script>
+</body>
+</html>
